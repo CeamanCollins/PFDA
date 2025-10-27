@@ -33,3 +33,30 @@ Making it look nice
 As always your code should be well laid out.
 
 If you are having difficulties, know I will be doing more on Pie charts later in this module.
+
+### Assignment 5: 
+
+This assignment is broken into 3 parts
+
+Upload the notebook assignment05-population.ipynb to you assignments repository.
+
+#### Part 1 70%
+Write a jupyter notebook that analyses the differences between the sexes by age in Ireland.
+
+Weighted mean age (by sex)
+The difference between the sexes by age
+This part does not need to look at the regions.
+
+ie You can take the notebook I used in the lectures and substitute the sexes for the regions.
+
+#### Part 2 20%
+In the same notebook, make a variable that stores an age (say 35).
+
+Write that code that would group the people within 5 years of that age together, into one age group 
+
+Calculate the population difference between the sexes in that age group.
+
+#### Part 3 10%
+In the same notebook.
+
+Write the code that would work out which region in Ireland has the biggest population difference between the sexes in that age group
