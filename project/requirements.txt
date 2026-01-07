@@ -1,8 +1,12 @@
 ipykernel
+regex
 matplotlib
 numpy
 pandas
 scikit-learn
 seaborn
 statsmodels
-basemap
+basemap # Note: From conda-forge channel, use 'conda install conda-forge::basemap'
+openmeteo-requests # Note: Only available via pip
+retry-requests # Note: Only available via pip
+requests-cache # Note: From conda-forge channel, use 'conda install conda-forge::requests-cache'
