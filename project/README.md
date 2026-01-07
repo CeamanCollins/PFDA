@@ -9,23 +9,25 @@ data.
 
 ## Summary of Project
 
-This project provides a comprehensive analysis of wind speed data from Mace Head Atmospheric Research Station on the west coast of Ireland, with implications for wind energy generation.
+This project has been an exploration in the analyses of wind speed recordings from Mace Head Atmospheric Research Station and other stations around Ireland. 
 
-**Key Findings:**
+**Key Findings**:
 
-1. **Storm Analysis**: The investigation identified and visualized six major storm events recorded at Mace Head, demonstrating the station's capability to capture significant weather phenomena.
+1. **Investigating Storms**: In this section we looked at 6 major weather events and how they were recorded at Mace Head. This demonstrates the station's ability to capture useful data.
 
-2. **Wind Turbine Viability**: Wind turbines with typical specifications would be operational approximately 90% of the time at Mace Head, exceeding the industry standard of 85%. However, only 0.03% of recorded wind speeds exceed the maximum safe operating threshold, indicating the location is well-suited for wind energy development.
+2. **Wind Turbines**: In this section we look at the capabilities of wind turbines to operate in different wind speeds and calculate what proportion of the time a wind turbine would be operational at this location. A turbine at this location would be active around 90% of the time, in-line with and potentially above the typical 85% expected of a normal turbine confirming that this location would be suitable for wind power generation.
 
-3. **Seasonal Patterns**: Analysis revealed distinct seasonal wind speed variations, with consistent patterns across years. Monthly wind speeds showed clear periodicity, with higher winds expected during winter months and lower speeds during summer.
+3. **National Ratings**: In this section we go about mapping the weather stations around Ireland and rate each location's viability for wind power production. Mace Head ranked second in the national rankings making it an excellent option for a wind farm.
 
-4. **Comparative Analysis**: Among Irish weather stations surveyed, Mace Head ranked as the second-best location for wind turbine operation, surpassed only by Malin Head. This positions the station as an excellent candidate for wind farm development.
+4. **Power Generation**: In this section we look at the theoretical output of a wind turbine and estimate the power generation of a turbine at this location considering specific technical limitations. After creating a function to calculate potential power outputs, we find that a wind turbine would have produced over 200MWh in January 2025 alone.
 
-5. **Power Generation Potential**: Using a 48-meter diameter turbine model, estimated power output calculations suggest the location could generate approximately **3.50 MWh in January 2026** alone, with strong potential for consistent year-round energy production.
+5. **Monthly Wind Speeds**: In this section we look at average wind speeds by month and look to plot the data in order to identify seasonal trends. By plotting the data in various ways we have identified definite seasonal peaks and troughs, i.e. lower wind speeds in the summer compared to the winter.
 
-6. **ARIMA Forecasting Model**: The developed ARIMA(2,0,2) seasonal model successfully captured monthly wind speed patterns with high accuracy, achieving only 3% difference between predicted and actual values in the test set. The model exhibits strong potential for medium-term forecasting.
+6. **Machine Learning**: In this section we go about creating an ARIMA model that could predict what wind speeds could be expected for a particular time period given historical data. Using our function from a previous section and the predicted average wind speeds, we find that out predictions and historical data only differ by around 3%. 
 
-**Conclusion**: In conclusion, the ARIMA model developed in this analysis successfully predicts monthly average wind speeds and demonstrates Mace Head's strong potential for wind energy generation. The model captures seasonal patterns with exceptional accuracy and provides reliable forecasts for planning wind farm operations. How well these predictions perform for future conditions will provide valuable validation for long-term renewable energy planning at this location.
+7. **Weather Forecasts**: In this section we get weather forecast data from an API and use it to make predictions about wind power production for the coming week. The values produced are quite different to the expected values from the model produced in the previous section, but it is difficult to say which is a better predictor for the future as that is only known with hindsight.
+
+**Conclusion:** Mace Head's capacity for recording weather data is extensive and detailed. The data has allowed analysis that has put Mace Head in the running as a candidate for a wind farm. The ARIMA model captures seasonal changes incredibly well and has proven to be an accurate predictor of potential power generation for the location. It is yet to be seen how well the model predicts future values, but based on historical data, it is a reliable source for any future planning that might occur at this location.
 
 ## Requirements
 
