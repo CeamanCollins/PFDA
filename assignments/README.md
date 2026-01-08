@@ -2,100 +2,106 @@
 
 Author: Céaman Collins
 
-This folder contains the assignments for the module Programming for Data Analytics at ATU.
+## Overview
 
-There is a requirements text in this folder, which are required to run the code.
+This folder contains the assignments for the *Programming for Data Analytics (PFDA)* module at ATU. The assignments demonstrate skills in Python programming, data analysis, and visualization across various datasets.
 
-It can be run in codespaces or cloned to be run in VSCode or Jupyter Notebook.
+## Setup and Installation
 
-## Contents
+To run the code provided in these assignments:
+1. Make sure you have Python installed (version 3.6 or higher is recommended).
 
-### Assignment 2: Northern bank holidays
+### Using `pip`:
+Install all required dependencies via the `requirements.txt` file:
 
-In this assignment were were asked to create a script that would print out the dates of the bank holidays that happen in Northern Ireland by reading in data from a JSON file on the UK government website. In order to get the last few marks we were asked to print the bank holidays that are unique to Northern Ireland.
+```bash
+pip install -r requirements.txt
+```
 
-> Write a program called assignment02-bankholdiays.py
->
-> The program should print out the dates of the bank holidays that happen in northern Ireland.
->
-> Last few marks (ie this is more tricky)
->
-> Modify the program to print the bank holidays that are unique to northern Ireland (i.e. do not happen elsewhere in the UK) you can choose if you want to use the name or the date of the holiday to decide if it is unique.
+### Using `conda`:
+Alternatively, create a Conda environment and install the required dependencies:
+
+```bash
+conda create --name <environment-name> --file requirements.txt
+```
+
+You can execute these assignments in CodeSpaces, Jupyter Notebook, or by cloning the repository and running the code locally in VSCode.
+
+---
+
+## Technologies Used
+
+The following technologies and tools were used in the assignments:
+- **Python**: Core language used for data analysis and scripting.
+- **Jupyter Notebook**: Interactive environment for developing and sharing code notebooks.
+- **Pandas**: Library for data manipulation and analysis.
+- **NumPy**: Library for numerical computations.
+- **Matplotlib**: Data visualization library for creating static, animated, and interactive plots.
+- **Seaborn**: Statistical data visualization library built on Matplotlib.
+- **Requests**: HTTP library for fetching data from APIs and URLs.
+- **GitHub**: For version control and automating workflows.
+
+---
+
+## Assignments
+
+### Assignment 2: Northern Bank Holidays
+
+In this assignment, the goal was to create a script that prints out the dates of bank holidays in Northern Ireland by reading data from a JSON file on the UK government website. Additionally, the program should identify the bank holidays that are unique to Northern Ireland (i.e., not occurring in other parts of the UK).
+
+- **Script Name:** [`assignment02-bankholdiays.py`](./assignment2/assignment02-bankholdiays.py)
+- **Tasks:**
+  1. Print the dates of all bank holidays in Northern Ireland.
+  2. (Advanced) Identify and print bank holidays unique to Northern Ireland, using either the name or date of the holidays.
+
+---
 
 ### Assignment 3: Domains
 
-In this assignment we were asked to create a pie chart of the email domains of users' emails contained in a csv file. 
+The aim of this assignment was to create a pie chart visualizing the distribution of email domains from a dataset of 1,000 people.
 
-> Create a notebook called assignment03-pie.ipynb
-> 
-> The note book should have a nice pie chart of peoples email domains in the csv file at the url
-> 
-> https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download
-> 
-> This csv file has 1000 people. You may download the data or link to it.
-> 
-> Marks will be given for:
-> 
-> Just creating the pie chart
-> Making it look nice
-> As always your code should be well laid out.
-> 
-> If you are having difficulties, know I will be doing more on Pie charts later in this module.
+- **Notebook Name:** [`assignment03-pie.ipynb`](./assignment3/assignment03-pie.ipynb)
+- **Dataset URL:** [Google Drive Link](https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download)
+- **Tasks:**
+  - Create a pie chart of the email domains in the dataset.
+  - Ensure the pie chart is well-designed and visually appealing.
 
-### Assignment 5: 
+---
 
-In this assignment we were asked to analyse some data from the Central Statistics Office of Ireland and look at the population distribution of male and females around the country, in various stratifications and forms.
+### Assignment 5: Population Distribution
 
-> This assignment is broken into 3 parts
-> 
-> Upload the notebook assignment05-population.ipynb to you assignments repository.
-> 
-> #### Part 1 70%
-> Write a jupyter notebook that analyses the differences between the sexes by age in Ireland.
-> 
-> Weighted mean age (by sex)
-> The difference between the sexes by age
-> This part does not need to look at the regions.
-> 
-> ie You can take the notebook I used in the lectures and substitute the sexes for the regions.
-> 
-> #### Part 2 20%
-> In the same notebook, make a variable that stores an age (say 35).
-> 
-> Write that code that would group the people within 5 years of that age together, into one age group 
-> 
-> Calculate the population difference between the sexes in that age group.
-> 
-> #### Part 3 10%
-> In the same notebook.
-> 
-> Write the code that would work out which region in Ireland has the biggest population difference between the sexes in that age group
+This assignment required the analysis of population data from the Central Statistics Office of Ireland. The data highlights differences between male and female populations by age, with additional stratifications and regional analyses.
 
-### Assignment 6: Knock airport Weather
+- **Notebook Name:** [`assignment05-population.ipynb`](./assignment5/assignment05-population.ipynb)
+- **Tasks:**
+  - **Part 1 (70%):**
+    - Analyze the differences between the sexes by age (weighted mean age, population differences). Regional data is not required here.
+  - **Part 2 (20%):**
+    - Create a variable for a specific age (e.g., 35), group people within five years of that age, and calculate population differences.
+  - **Part 3 (10%):**
+    - Determine which region in Ireland has the largest population difference between sexes for the specified age group.
 
-In this assignment, were were asked to analyse some data from Knock airport weather station and plot various details contained within the dataset linked.
+---
 
-> Create a notebook called assignment_6_Weather.ipynb
-> 
-> Get the data from this link.
-> 
-> https://cli.fusio.net/cli/climate_data/webdata/hly4935.csv
-> 
-> (This is different that the data I used in the lecture)
-> 
-> Plot:
-> 
-> The temperature
-> The mean temperature each day
-> The mean temperature for each month
-> 60% of the marks will be given for the above
-> 
-> For the last 40%
-> 
-> Plot:
-> 
-> The Windspeed (there is data missing from this column)
-> The rolling windspeed (say over 24 hours)
-> The max windspeed for each day
-> The monthly mean of the daily max windspeeds (yer I am being nasty here)
-> You do not need to over comment your code. Marks will be given for how nice the plots are.
+### Assignment 6: Knock Airport Weather
+
+In this assignment, data from the Knock Airport weather station was analyzed to create plots of various weather metrics.
+
+- **Notebook Name:** [`assignment_6_Weather.ipynb`](./assignment6/assignment_6_Weather.ipynb)
+- **Dataset URL:** [Climate Data CSV](https://cli.fusio.net/cli/climate_data/webdata/hly4935.csv)
+- **Tasks:**
+  - Plot the following:
+    - Temperature
+    - Mean temperature per day
+    - Mean temperature per month (60% of total marks)
+  - Additional:
+    - Windspeed (accounting for missing data)
+    - Rolling windspeed (24-hour averages)
+    - Maximum daily windspeed
+    - Monthly mean of daily maximum windspeeds (40% of total marks)
+
+---
+
+## Contact
+
+For any questions or further information, please reach out to **Céaman Collins** via GitHub.
