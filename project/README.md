@@ -1,13 +1,18 @@
 # PFDA Project
 
-This folder contains the project for the module Programming for Data Analytics at ATU.
+## Overview
 
-## Brief
+This folder contains the project for the *Programming for Data Analytics (PFDA)* module at ATU. The project focuses on exploring wind speed data, analyzing patterns, and evaluating the feasibility of wind power generation at various locations in Ireland.
 
-Write a Notebook that demonstrates that you can perform data analysis on some
-data.
+## Project Description
 
-## Summary of Project
+The project involves an in-depth analysis of wind speed recordings from Mace Head Atmospheric Research Station and other stations across Ireland. Key objectives include:
+- Investigating the station's ability to capture data during significant weather events.
+- Assessing wind turbines' operational capacity based on location-specific wind conditions.
+- Mapping, ranking, and rating various weather stations around Ireland for wind power generation.
+- Modeling and predicting wind speeds using ARIMA techniques for optimized planning.
+
+### Summary of Project
 
 This project has been an exploration in the analyses of wind speed recordings from Mace Head Atmospheric Research Station and other stations around Ireland. 
 
@@ -29,10 +34,43 @@ This project has been an exploration in the analyses of wind speed recordings fr
 
 **Conclusion:** Mace Head's capacity for recording weather data is extensive and detailed. The data has allowed analysis that has put Mace Head in the running as a candidate for a wind farm. The ARIMA model captures seasonal changes incredibly well and has proven to be an accurate predictor of potential power generation for the location. It is yet to be seen how well the model predicts future values, but based on historical data, it is a reliable source for any future planning that might occur at this location.
 
-## Requirements
+## Technologies Used
 
-There is a [requirements.txt](requirements.txt) file that contains the necessary packages for the execution of code contained in this notebook. If using conda, some are only available through conda-forge and some are not available through conda and can only be accessed through pip. Please refer to the comments in the requirements file for more information.
+The following technologies and tools were used in the project:
+- **Python**: Core language used for data analysis and modeling.
+- **Jupyter Notebook**: Interactive environment for developing and sharing code and analysis.
+- **Pandas**: Library for data manipulation and analysis.
+- **NumPy**: Library for numerical computations.
+- **Matplotlib**: Data visualization library for creating static and interactive plots.
+- **Seaborn**: Statistical data visualization library built on Matplotlib.
+- **ARIMA (via `statsmodels`)**: Model for time series forecasting and analysis.
+- **Requests**: HTTP library for fetching data from weather forecast APIs.
+- **GitHub**: Version control for managing project history and collaboration.
 
-## Use
+## Setup and Installation
 
-The project is contained within a Jupyter notebook. You can open this in VSCode, on a Jupyter server on your own machine or in codespaces on GitHub. The code is designed to be run in sequence and may not run if you attempt to run single cells out of sequence.
+To execute the code in the project:
+1. Clone the repository and navigate to the `project/` folder.
+2. Install the required dependencies.
+
+### Using `pip`:
+Install dependencies from the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Using `conda`:
+Alternatively, create a Conda environment and install the required packages:
+
+```bash
+conda create --name <environment-name> --file requirements.txt
+```
+
+*Note*: Some packages are only available through `conda-forge`, and others must be installed with `pip`, as specified in the `requirements.txt` comments.
+
+---
+
+## Contact
+
+For any questions or further information, please reach out to **Céaman Collins** via GitHub.
